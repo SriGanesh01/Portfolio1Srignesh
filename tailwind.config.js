@@ -5,8 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        rubik: ['Rubik', 'sans-serif'],
+      },
+      fontWeight: {
+        'optical': 'auto',
+        'bold': '900',
+      },
+      fontStyle: {
+        'normal': 'normal',
+      },
+    },
   },
   plugins: [],
 }
-
