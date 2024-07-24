@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         rubik: ['Rubik', 'sans-serif'],
+        'M PLUS 2': ['M PLUS 2', 'sans-serif'],
+        LondrinaOutline: ['Londrina Outline', 'cursive'],
       },
       fontWeight: {
         'optical': 'auto',

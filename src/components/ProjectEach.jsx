@@ -3,18 +3,23 @@ import PropTypes from 'prop-types';
 
 function ProjectEach({ title, description, imageUrl, link }) {
     return (
-        <div className='bg-[#beff3333] rounded-lg py-2 px-2 mx-2 '>
-            <div className="bg-[#1F3337] p-3 rounded-lg shadow-lg" style={{ border: '2px solid #a3a35d', color: '#d4d4c8' }}>
-                <div className="text-2xl font-bold mb-2 bg-transparent text-[#d4d4c8]">
+        <div className="bg-[#beff3333] rounded-lg py-2 px-2 mx-5 my-7 inline-block" style={{ width: '400px', height: '550px' }}>
+            <div className="bg-[#1F3337] p-3 rounded-lg shadow-lg w-full h-full flex flex-col border-2 border-[#a3a35d] text-[#d4d4c8]">
+                <div className="text-2xl font-bold mb-2 min-h-20 bg-transparent">
                     {title}
                 </div>
-                <div className="w-full h-[165px] bg-gray-500 mb-4" style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                <div className="mb-4 bg-transparent text-[#d4d4c8] ">
+                <div 
+                    className="w-full h-[220px] bg-gray-500 mt-6 bg-cover bg-center" 
+                    style={{ backgroundImage: `url(${imageUrl || 'default-image-url.jpg'})` }}
+                ></div>
+                <div className="flex-grow mt-5 bg-transparent ">
                     {description}
                 </div>
-                <a href={link} className="text-yellow-500 bg-transparent hover:text-yellow-700 cursor-pointer" style={{ color: '#e7e714' }}>
-                    See More
-                </a>
+                <div className="flex justify-end mt-auto bg-transparent">
+                    <a href={link} className="text-[#FAFF00] hover:text-yellow-700 self-end bg-transparent">
+                        See More
+                    </a>
+                </div>
             </div>
         </div>
     );
