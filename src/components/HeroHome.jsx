@@ -10,7 +10,7 @@ function HeroHome() {
                     <img src={undraw_code_typing} alt="Coding Icon" className="w-[250px] h-auto pb-[160px]" />
                 </div>
                 <div className="bg-[#102939] p-4 rounded-3xl border-2 border-[#959366] text-white w-md mx-5 my-12 shadow-lg mb-36">
-                    <div className="bg-[#102939] text-[15px] font-normal font-podkova">
+                    <div className="bg-[#102939] text-[15px] sm:text-[25px] font-normal font-podkova">
                         I am a passionate developer specializing in creating user-friendly applications, with a strong background in Front-End Web Development and Game Development.
                     </div>
                 </div>

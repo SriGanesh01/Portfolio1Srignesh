@@ -5,7 +5,7 @@ import PageLine1 from '../assets/PageLine1.svg';
 function ProjectsHome() {
     return (
         <>
-            <div className="text-white text-[50px] font-normal font-['Monospac821 BT'] text-center">PROJECTS</div>
+            <div className="text-white text-[50px] sm:text-[85px] font-normal font-['Monospac821 BT'] text-center">PROJECTS</div>
 
             <div className="flex flex-col items-center justify-center">
                 <ProjectEach />
