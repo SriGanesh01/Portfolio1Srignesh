@@ -16,7 +16,7 @@ function ProjectEach({ title, description, imageUrl, link }) {
                     {description}
                 </div>
                 <div className="flex justify-end mt-auto bg-transparent">
-                    <a href={link} className="text-[#FAFF00] hover:text-yellow-700 self-end bg-transparent">
+                    <a href={link} className="text-[#FAFF00] hover:text-yellow-700 self-end bg-transparent" target='_blank'>
                         See More
                     </a>
                 </div>

@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify'
 // import './App.css'
 
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/home" element={<Home />} />
+                    <Route path="/projects" element={<Projects />} />
                 </Routes>
             </BrowserRouter>
             <ToastContainer />

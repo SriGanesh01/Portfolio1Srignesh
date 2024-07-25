@@ -12,16 +12,19 @@ function ContactHome() {
             </div>
             <div className="text-white text-[20px] sm:text-[22px] lg:text-[40px] font-normal font-['Monda'] pl-5">Get in Touch :</div>
             <div className='flex flex-col space-y-6 pt-5'>
-                <a className='flex' href='#'>
+                <a className='flex' href='mailto:psriganesh2005@gmail.com?subject=Your Subject&body=Your message here' target='_blank'>
                     <img src={Mail1} alt="Mail" className='pl-5 w-16 sm:w-20 lg:w-32 h-auto' />
-                    <div className="text-white text-[17px] sm:text-[25px] lg:text-[40px] font-normal font-['Monda'] pl-5 lg:pl-7">psriganesh2005@gmail.com</div>
+                    <div className="text-white text-[17px] sm:text-[25px] lg:text-[40px] font-normal font-['Monda'] pl-5 lg:pl-7">
+                        psriganesh2005@gmail.com
+                    </div>
                 </a>
-                <a className='flex' href='#'>
-                    <img src={LinkedIn} alt="Mail" className='pl-5 w-16 sm:w-20 lg:w-32 h-auto' />
+
+                <a className='flex' href='https://www.linkedin.com/in/sriganesh-prakash-725a50279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank'>
+                    <img src={LinkedIn} alt="LinkedIn" className='pl-5 w-16 sm:w-20 lg:w-32 h-auto' />
                     <div className="text-white text-[17px] sm:text-[25px] lg:text-[40px] font-normal font-['Monda'] pl-5 pt-3 lg:pt-6 lg:pl-7">Sriganesh Prakash</div>
                 </a>
-                <a className='flex' href='#'>
-                    <img src={Github} alt="Mail" className='pl-5 w-16 sm:w-20 lg:w-32 h-auto' />
+                <a className='flex' href='https://github.com/SriGanesh01' target='_blank'>
+                    <img src={Github} alt="Github" className='pl-5 w-16 sm:w-20 lg:w-32 h-auto' />
                     <div className="text-white text-[17px] sm:text-[25px] lg:text-[40px] font-normal font-['Monda'] pl-5 pt-3 lg:pt-6 lg:pl-7">Sriganesh01</div>
                 </a>
             </div>
