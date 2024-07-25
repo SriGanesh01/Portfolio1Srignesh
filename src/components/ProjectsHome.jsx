@@ -5,9 +5,9 @@ import PageLine1 from '../assets/PageLine1.svg';
 function ProjectsHome() {
     return (
         <>
-            <div className="text-white text-[100px] font-normal font-['Monospac821 BT'] text-center">PROJECTS</div>
+            <div className="text-white text-[50px] font-normal font-['Monospac821 BT'] text-center">PROJECTS</div>
 
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
                 <ProjectEach />
                 <ProjectEach
                     title="Terminal Emulator Project Showcase"

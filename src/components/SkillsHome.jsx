@@ -11,7 +11,7 @@ import PageLine1 from '../assets/PageLine1.svg';
 function SkillsHome() {
     return (
         <>
-            <div className='flex flex-col space-y-36 w-full h-auto'>
+            <div className='flex flex-col space-y-6 mt-[-70px] w-full h-auto bg-transparent'>
                 <img src={LanguageGroup1} alt="" className='w-full h-auto' />
                 <img src={SkillsGroup1} alt="" className='w-full h-auto' />
             </div>
