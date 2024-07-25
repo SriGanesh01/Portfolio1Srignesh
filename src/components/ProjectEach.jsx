@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ProjectEach({ title, description, imageUrl, link }) {
     return (
-        <div className="bg-[#beff3333] rounded-lg py-2 px-2 mx-5 my-7 inline-block" style={{ width: '400px', height: '550px' }}>
+        <div className="bg-[#beff3333] rounded-lg py-2 px-2 mx-5 my-7 inline-block min-w-[400px] max-w-[400px] h-[550px]">
             <div className="bg-[#1F3337] p-3 rounded-lg shadow-lg w-full h-full flex flex-col border-2 border-[#a3a35d] text-[#d4d4c8]">
                 <div className="text-2xl font-bold mb-2 min-h-20 bg-transparent">
                     {title}

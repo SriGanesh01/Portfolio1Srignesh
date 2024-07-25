@@ -1,12 +1,10 @@
 import undraw_code_typing from '../assets/undraw_code_typing.svg';
+import NameTitle from '../assets/NameTitle.svg';
 
 function HeroHome() {
     return (
         <div className="flex flex-col items-center text-white h-auto ">
-            <div className="flex flex-col items-start w-full w-md px-5 mt-8 mb-6">
-                <p className="font-rubik font-bold text-[190px] bg-transparent">SRIGANESH.P</p>
-                <p className="text-[60px] font-normal font-podkova mt-[-85px] bg-transparent">Developer</p>
-            </div>
+            <img src={NameTitle} alt="SRIGANESH.P Developer" className='w-full h-auto'/>
             <div className='flex pt-7 mt-[35px]'>
                 <div className="flex justify-start w-full w-md px-5 mt-[-12px] bg-transparent mb-[-20px] pt-11">
                     <img src={undraw_code_typing} alt="Coding Icon" className="w-[250px] h-auto pb-[160px]" />
