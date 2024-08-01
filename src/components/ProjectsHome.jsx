@@ -20,7 +20,7 @@ function ProjectsHome() {
                     title="Terminal Emulator In Unity"
                     description="This Project focuses on creating a terminal-like interface with working commands. It focuses on being used as a command-line during runtime."
                     imageUrl={TerminalApp}
-                    link="https://assetstore.unity.com/"
+                    link="https://assetstore.unity.com/packages/tools/gui/terminal-for-games-289879"
                 />
                 <ProjectEach />
             </div>
