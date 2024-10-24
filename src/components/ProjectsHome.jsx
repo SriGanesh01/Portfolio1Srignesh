@@ -22,7 +22,12 @@ function ProjectsHome() {
                     imageUrl={TerminalApp}
                     link="https://assetstore.unity.com/packages/tools/gui/terminal-for-games-289879"
                 />
-                <ProjectEach />
+                <ProjectEach 
+                    title="Proteficial"
+                    description="This Project focuses on finding a solution to the Protein Folding Problem using AI and Machine Learning."
+                    // imageUrl={TerminalApp}
+                    link="synnux.com"
+                />
             </div>
             <a href="/projects" className='text-xl text-[#FAFF00] hover:text-yellow-700 px-7 mt-5 flex justify-end bg-transparent'>See More</a>
             <img src={PageLine1} alt="" className='pt-2 pb-2 w-full h-auto' />

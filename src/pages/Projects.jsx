@@ -1,9 +1,12 @@
+import Header from "../components/Header";
 
+import img2 from '../assets/5106541.jpg';
 
 function Projects() {
   return (
     <div>
-      <h1 className="text-white">Projects</h1>
+      <Header />
+      <img src={img2} alt="" />
     </div>
   );
 }
