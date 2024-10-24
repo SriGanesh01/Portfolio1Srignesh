@@ -26,7 +26,7 @@ function ProjectsHome() {
                     title="Proteficial"
                     description="This Project focuses on finding a solution to the Protein Folding Problem using AI and Machine Learning."
                     // imageUrl={TerminalApp}
-                    link="proteficial.synnux.com"
+                    link="https://proteficial.synnux.com"
                 />
             </div>
             <a href="/projects" className='text-xl text-[#FAFF00] hover:text-yellow-700 px-7 mt-5 flex justify-end bg-transparent'>See More</a>
