@@ -1,10 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,900;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-    background-color: #04181C;
+@theme {
+  --font-primary: "Graduate", serif; 
+}
+
+body {
+    background-color: #08090A;
+    color: #EAE7C7;
+}
+
+.heart1 {
+    transform-origin: bottom right;
+    overflow: visible;
+    transform: rotateZ(0deg);
+    transition: transform 1.5s ease, fill 2.3s ease-in;
+    fill: #EAE7C7;
+}
+
+.heart1:hover {
+    transform-origin: bottom right;
+    transform: rotateZ(7deg);
+    fill: red;
+    animation: BeatHeart 0.3s ease infinite alternate;
+}
+
+@keyframes BeatHeart {
+    0% {
+        
+    }
+    100% {
+        /* transform: rotateZ(7deg) scale(0.95) */
+        scale: 0.95;
+    }
 }
