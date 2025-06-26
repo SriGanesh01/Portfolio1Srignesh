@@ -1,14 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 @import "tailwindcss";
 
 @theme {
   --font-primary: "Graduate", serif; 
+  --font-secondary: "Viga", sans-serif;
+  --font-tretiary: "Victor Mono", monospace;
+  --font-handwritten1: "Nanum Brush Script", cursive;
 }
 
 body {
     background-color: #08090A;
     color: #EAE7C7;
+    height: 1000vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: 5px;
+    scrollbar-color: #EAE7C7;
 }
 
 .heart1 {
@@ -34,4 +47,96 @@ body {
         /* transform: rotateZ(7deg) scale(0.95) */
         scale: 0.95;
     }
+}
+
+
+/** Animation Home */
+
+.turnabit {
+    transition: transform 0.32s cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+}
+
+.turnabit:hover {
+    transition-delay: 200ms;
+    transform: rotateZ(15deg);
+}
+
+.floatflip {
+    animation: Flip 1s ease 100ms;
+}
+
+.floatflipreverse {
+    animation: FlipBack 1s ease 100ms;
+}
+
+@keyframes Flip {
+    0% {
+        transform: rotateY(0deg) ;
+    }
+    100% {
+        transform: rotateY(180deg) ;
+    }
+}
+
+@keyframes FlipBack {
+    0% {
+        transform: rotateY(180deg) ;
+    }
+    100% {
+        transform: rotateY(0deg) ;
+    }
+}
+/* .SocialIcons {
+    transition: transform 0.1s ease;
+}
+
+.SocialIcons:hover {
+    transform: scale3d(1.2, 1.2, 1);
+} */
+
+.ExpandP09 {
+    /* transition: transform 0.3s ease;
+    transform: scale3d(0.9, 0.9, 1); */
+}
+
+.ExpandP1 {
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale3d(1, 1, 1);
+    padding: 0px;
+
+}
+
+.ExpandP2 {
+    transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale3d(1.18, 1.18, 1);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ExpandP4 {
+    transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale3d(1.4, 1.4, 1);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* .ExpandFull {
+    transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale3d(1.2, 1.2, 1)
+} */
+
+.ExpandMargin0 {
+    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    margin: 0px;
+    padding: 0px;
+}
+
+.ExpandMarginA {
+    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    margin: 12px;
+}
+
+.ExpandMarginB {
+    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    margin: 24px;
 }
