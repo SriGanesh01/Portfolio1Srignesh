@@ -135,16 +135,16 @@ function HeroHome() {
                     <div className="w-85 relative">
                         <div onClick={() => SetClickState(!ClickState)} tabIndex="0" className="turnabit">
                             {/* <div  className="absolute h-full w-full bg-transparent z-12" tabIndex="0"></div> */}
-                            <img ref={cardFlipRef} className={`rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover`} tabIndex="0" src="src/assets/Home/MyPhoto.jpg" alt="" />
+                            <img ref={cardFlipRef} className={`rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover`} tabIndex="0" src="../src/assets/Home/MyPhoto.jpg" alt="" />
                             <div ref={cardFlipBackRef} className={`absolute top-0 left-0 h-full w-full bg-black rounded-xl`}></div>
                         </div>
                         <div className="">
                             <p className="rotate-[285deg] font-handwritten1 text-6xl pb-4 absolute top-10 left-[-11px] z-[-1]">Click</p>
-                            <img className="absolute -rotate-2 top-[-4px] left-[13.7px] w-12.5 z-[-1]" src="src/assets/Home/arrow1.png" alt="" />
+                            <img className="absolute -rotate-2 top-[-4px] left-[13.7px] w-12.5 z-[-1]" src="../src/assets/Home/arrow1.png" alt="" />
                         </div>
                         <div className="">
                             <p className="rotate-[105deg] font-handwritten1 text-6xl pb-4 absolute bottom-10 right-[-11px]  z-[-1]">Click</p>
-                            <img className="absolute rotate-[182deg] bottom-[-4px] right-[13.7px] w-12.5 z-[-1]" src="src/assets/Home/arrow1.png" alt="" />
+                            <img className="absolute rotate-[182deg] bottom-[-4px] right-[13.7px] w-12.5 z-[-1]" src="../src/assets/Home/arrow1.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -157,11 +157,11 @@ function HeroHome() {
                     </div>
                     <div className="flex flex-col">
                         <div ref={ItemBorder} className="px-1 py-1 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3 ml-4">
-                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/"><img ref={LinkedPos} className="SocialIcons min-w-15" src="src/assets/Home/Icons/LinkedIn.svg" alt="" /></a>
-                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons min-w-15" src="src/assets/Home/Icons/GitHub.svg" alt="" /></a>
-                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons min-w-15" src="src/assets/Home/Icons/Mail.svg" alt="" /></a>
-                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons min-w-15" src="src/assets/Home/Icons/Instagram.svg" alt="" /></a>
-                            <a href="public/CV_SRIGANESH_P_v5.pdf"><img ref={ResumePos} className="SocialIcons min-w-15" src="src/assets/Home/Icons/CV.svg" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/"><img ref={LinkedPos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/LinkedIn.svg" alt="" /></a>
+                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/GitHub.svg" alt="" /></a>
+                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/Mail.svg" alt="" /></a>
+                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/Instagram.svg" alt="" /></a>
+                            <a href="public/CV_SRIGANESH_P_v5.pdf"><img ref={ResumePos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/CV.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>
