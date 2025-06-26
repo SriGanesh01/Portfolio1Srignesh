@@ -11,6 +11,7 @@ import Instagram from "../../assets/Home/Icons/Instagram.svg";
 import Resume from "../../assets/Home/Icons/CV.svg";
 import Arrow1 from "../../assets/Home/arrow1.png"
 import MyPhoto1 from "../../assets/Home/MyPhoto.jpg"
+import Location from "../../assets/Home/Location.svg"
 
 
 function HeroHome() {
@@ -161,15 +162,18 @@ function HeroHome() {
                         <div className="font-secondary text-[62px]">Hello&#44; I&#39;m Sriganesh P</div>
                         <div className="font-tretiary font-extralight text-[42px]">Unity & <br /> React Developer</div>
                         <br />
-                        <div className="font-tretiary font-thin text-[16px]">Based in Tamil Nadu&#44; India</div>
+                        <div className="flex gap-2 ">
+                            <div className="font-tretiary font-thin text-[16px]">Based in Tamil Nadu&#44; India </div>
+                            <a className="" href="https://maps.app.goo.gl/DR8QozvhKgo4gNsp8" target="_blank" ><img className="-translate-y-[5px] h-6 tapping" src={Location} alt="" /></a>
+                        </div>
                     </div>
                     <div className="flex flex-col">
                         <div ref={ItemBorder} className="px-1 py-1 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3 ml-4">
-                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/"><img ref={LinkedPos} className="SocialIcons min-w-15" src={LinkedInIcon} alt="" /></a>
-                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons min-w-15" src={GitHub} alt="" /></a>
-                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons min-w-15" src={Mail} alt="" /></a>
-                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons min-w-15" src={Instagram} alt="" /></a>
-                            <a href="public/CV_SRIGANESH_P_v5.pdf"><img ref={ResumePos} className="SocialIcons min-w-15" src={Resume} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/" target="_blank" ><img ref={LinkedPos} className="SocialIcons min-w-15" src={LinkedInIcon} alt="" /></a>
+                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons min-w-15" src={GitHub} alt="" target="_blank" /></a>
+                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons min-w-15" src={Mail} alt="" target="_blank" /></a>
+                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons min-w-15" src={Instagram} alt="" target="_blank" /></a>
+                            <a href="public/CV_SRIGANESH_P_v5.pdf"><img ref={ResumePos} className="SocialIcons min-w-15" src={Resume} alt="" target="_blank" /></a>
                         </div>
                     </div>
                 </div>
