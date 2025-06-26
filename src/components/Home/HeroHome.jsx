@@ -1,8 +1,10 @@
+
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import Header from "../Header";
 
+import LinkedInIcon from "../../assets/Home/Icons/LinkedIn.svg";
 
 
 function HeroHome() {
@@ -157,7 +159,7 @@ function HeroHome() {
                     </div>
                     <div className="flex flex-col">
                         <div ref={ItemBorder} className="px-1 py-1 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3 ml-4">
-                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/"><img ref={LinkedPos} className="SocialIcons min-w-15" src="../assets/Home/Icons/LinkedIn.svg" alt="" /></a>
+                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/"><img ref={LinkedPos} className="SocialIcons min-w-15" src={LinkedInIcon} alt="" /></a>
                             <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons min-w-15" src="../src/assets/Home/Icons/GitHub.svg" alt="" /></a>
                             <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons min-w-15" src="../assets/Home/Icons/Mail.svg" alt="" /></a>
                             <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons min-w-15" src="../assets/Home/Icons/Instagram.svg" alt="" /></a>
