@@ -135,7 +135,7 @@ function HeroHome() {
                     <div className="w-85 relative">
                         <div onClick={() => SetClickState(!ClickState)} tabIndex="0" className="turnabit">
                             {/* <div  className="absolute h-full w-full bg-transparent z-12" tabIndex="0"></div> */}
-                            <img ref={cardFlipRef} className={`rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover`} tabIndex="0" src="../src/assets/Home/MyPhoto.jpg" alt="" />
+                            <img ref={cardFlipRef} className={`rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover`} tabIndex="0" src="../src/assets/MyPhoto.jpg" alt="" />
                             <div ref={cardFlipBackRef} className={`absolute top-0 left-0 h-full w-full bg-black rounded-xl`}></div>
                         </div>
                         <div className="">
