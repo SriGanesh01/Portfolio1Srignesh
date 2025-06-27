@@ -47,25 +47,25 @@ function HeroHome() {
 
         if (!ClickState) {
             console.log("cool");
-            front.classList.add('floatflip');
-            front.classList.remove('floatflipreverse');
-            back.classList.remove('floatflip');
-            back.classList.add('floatflipreverse');
+            front.classList.add('lg:floatflip');
+            front.classList.remove('lg:floatflipreverse');
+            back.classList.remove('lg:floatflip');
+            back.classList.add('lg:floatflipreverse');
 
             setTimeout(() => {
-                front.classList.add('z-[-1]');
-                back.classList.remove('z-[-1]');
+                front.classList.add('lg:z-[-1]');
+                back.classList.remove('lg:z-[-1]');
             }, 380);
         } else {
             console.log("cooler");
-            back.classList.add('floatflip');
-            back.classList.remove('floatflipreverse');
-            front.classList.remove('floatflip');
-            front.classList.add('floatflipreverse');
+            back.classList.add('lg:floatflip');
+            back.classList.remove('lg:floatflipreverse');
+            front.classList.remove('lg:floatflip');
+            front.classList.add('lg:floatflipreverse');
 
             setTimeout(() => {
-                back.classList.add('z-[-1]');
-                front.classList.remove('z-[-1]');
+                back.classList.add('lg:z-[-1]');
+                front.classList.remove('lg:z-[-1]');
             }, 380);
         }
 
@@ -81,19 +81,19 @@ function HeroHome() {
         const item = AnyPos.current
 
         if (distY <= 40 && distX <= 33) {
-            item.classList.remove('ExpandP2')
-            item.classList.remove('ExpandP1')
-            item.classList.add('ExpandP4')
+            item.classList.remove('lg:ExpandP2')
+            item.classList.remove('lg:ExpandP1')
+            item.classList.add('lg:ExpandP4')
         }
         else if (distY < 30 && distX <= 100) {
-            item.classList.remove('ExpandP4')
-            item.classList.remove('ExpandP1')
-            item.classList.add('ExpandP2')
+            item.classList.remove('lg:ExpandP4')
+            item.classList.remove('lg:ExpandP1')
+            item.classList.add('lg:ExpandP2')
         }
         else {
-            item.classList.remove('ExpandP2')
-            item.classList.remove('ExpandP4')
-            item.classList.add('ExpandP1')
+            item.classList.remove('lg:ExpandP2')
+            item.classList.remove('lg:ExpandP4')
+            item.classList.add('lg:ExpandP1')
         }
     }
 
