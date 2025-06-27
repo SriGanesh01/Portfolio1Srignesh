@@ -6,10 +6,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-primary: "Graduate", serif; 
-  --font-secondary: "Viga", sans-serif;
-  --font-tretiary: "Victor Mono", monospace;
-  --font-handwritten1: "Nanum Brush Script", cursive;
+    --font-primary: "Graduate", serif;
+    --font-secondary: "Viga", sans-serif;
+    --font-tretiary: "Victor Mono", monospace;
+    --font-handwritten1: "Nanum Brush Script", cursive;
 }
 
 body {
@@ -40,9 +40,8 @@ body::-webkit-scrollbar {
 }
 
 @keyframes BeatHeart {
-    0% {
-        
-    }
+    0% {}
+
     100% {
         /* transform: rotateZ(7deg) scale(0.95) */
         scale: 0.95;
@@ -52,40 +51,110 @@ body::-webkit-scrollbar {
 
 /** Animation Home */
 
-.turnabit {
-    transition: transform 0.32s cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
-}
-
-.turnabit:hover {
-    transition-delay: 200ms;
-    transform: rotateZ(15deg);
-}
-
-.floatflip {
-    animation: Flip 1s ease 100ms;
-}
-
-.floatflipreverse {
-    animation: FlipBack 1s ease 100ms;
-}
-
-@keyframes Flip {
-    0% {
-        transform: rotateY(0deg) ;
+@media screen and (min-width: 1024px) {
+    .bk {
+        z-index: -1;
     }
-    100% {
-        transform: rotateY(180deg) ;
+
+    .nbk {
+        z-index: 1;
+    }
+
+    .turnabit {
+        transition: transform 0.32s cubic-bezier(0.25, 0.1, 0.25, 1) 50ms;
+    }
+
+    .turnabit:hover {
+        transition-delay: 200ms;
+        transform: rotateZ(15deg);
+    }
+
+    .floatflip {
+        animation: Flip 1s ease 100ms;
+    }
+
+    .floatflipreverse {
+        animation: FlipBack 1s ease 100ms;
+    }
+
+    @keyframes Flip {
+        0% {
+            transform: rotateY(0deg);
+        }
+
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+
+    @keyframes FlipBack {
+        0% {
+            transform: rotateY(180deg);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+        }
+    }
+
+    .ExpandP09 {
+        /* transition: transform 0.3s ease;
+    transform: scale3d(0.9, 0.9, 1); */
+    }
+
+    .ExpandP1 {
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transform: scale3d(1, 1, 1);
+        padding: 0px;
+
+    }
+
+    .ExpandP2 {
+        transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transform: scale3d(1.18, 1.18, 1);
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .ExpandP4 {
+        transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        transform: scale3d(1.4, 1.4, 1);
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    /* .ExpandFull {
+    transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: scale3d(1.2, 1.2, 1)
+} */
+
+    .ExpandMargin0 {
+        transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .ExpandMarginA {
+        transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+        margin: 12px;
+    }
+
+    .ExpandMarginB {
+        transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+        margin: 24px;
+    }
+
+    .tapping {
+        transform-origin: bottom center;
+        transition: transform 0.3s ease;
+    }
+
+    .tapping:hover {
+        transform-origin: bottom center;
+        transform: rotateZ(25deg)
     }
 }
 
-@keyframes FlipBack {
-    0% {
-        transform: rotateY(180deg) ;
-    }
-    100% {
-        transform: rotateY(0deg) ;
-    }
-}
 /* .SocialIcons {
     transition: transform 0.1s ease;
 }
@@ -93,62 +162,3 @@ body::-webkit-scrollbar {
 .SocialIcons:hover {
     transform: scale3d(1.2, 1.2, 1);
 } */
-
-.ExpandP09 {
-    /* transition: transform 0.3s ease;
-    transform: scale3d(0.9, 0.9, 1); */
-}
-
-.ExpandP1 {
-    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    transform: scale3d(1, 1, 1);
-    padding: 0px;
-
-}
-
-.ExpandP2 {
-    transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    transform: scale3d(1.18, 1.18, 1);
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.ExpandP4 {
-    transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1), padding 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-    transform: scale3d(1.4, 1.4, 1);
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-/* .ExpandFull {
-    transition: transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
-    transform: scale3d(1.2, 1.2, 1)
-} */
-
-.ExpandMargin0 {
-    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
-    margin: 0px;
-    padding: 0px;
-}
-
-.ExpandMarginA {
-    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
-    margin: 12px;
-}
-
-.ExpandMarginB {
-    transition: margin 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
-    margin: 24px;
-}
-
-.tapping {
-    transform-origin: bottom center;
-    transition: transform 0.3s ease;
-}
-
-.tapping:hover {
-    transform-origin: bottom center;
-    transform: rotateZ(25deg)
-}
-
-

@@ -47,25 +47,29 @@ function HeroHome() {
 
         if (!ClickState) {
             console.log("cool");
-            front.classList.add('lg:floatflip');
-            front.classList.remove('lg:floatflipreverse');
-            back.classList.remove('lg:floatflip');
-            back.classList.add('lg:floatflipreverse');
+            front.classList.add('floatflip');
+            front.classList.remove('floatflipreverse');
+            back.classList.remove('floatflip');
+            back.classList.add('floatflipreverse');
 
             setTimeout(() => {
-                front.classList.add('lg:z-[-1]');
-                back.classList.remove('lg:z-[-1]');
+                front.classList.add('bk');
+                front.classList.remove('nbk');
+                back.classList.remove('bk');
+                back.classList.add('nbk');
             }, 380);
         } else {
             console.log("cooler");
-            back.classList.add('lg:floatflip');
-            back.classList.remove('lg:floatflipreverse');
-            front.classList.remove('lg:floatflip');
-            front.classList.add('lg:floatflipreverse');
+            back.classList.add('floatflip');
+            back.classList.remove('floatflipreverse');
+            front.classList.remove('floatflip');
+            front.classList.add('floatflipreverse');
 
             setTimeout(() => {
-                back.classList.add('lg:z-[-1]');
-                front.classList.remove('lg:z-[-1]');
+                back.classList.add('bk');
+                back.classList.remove('nbk');
+                front.classList.remove('bk');
+                front.classList.add('nbk');
             }, 380);
         }
 
@@ -81,19 +85,19 @@ function HeroHome() {
         const item = AnyPos.current
 
         if (distY <= 40 && distX <= 33) {
-            item.classList.remove('lg:ExpandP2')
-            item.classList.remove('lg:ExpandP1')
-            item.classList.add('lg:ExpandP4')
+            item.classList.remove('ExpandP2')
+            item.classList.remove('ExpandP1')
+            item.classList.add('ExpandP4')
         }
         else if (distY < 30 && distX <= 100) {
-            item.classList.remove('lg:ExpandP4')
-            item.classList.remove('lg:ExpandP1')
-            item.classList.add('lg:ExpandP2')
+            item.classList.remove('ExpandP4')
+            item.classList.remove('ExpandP1')
+            item.classList.add('ExpandP2')
         }
         else {
-            item.classList.remove('lg:ExpandP2')
-            item.classList.remove('lg:ExpandP4')
-            item.classList.add('lg:ExpandP1')
+            item.classList.remove('ExpandP2')
+            item.classList.remove('ExpandP4')
+            item.classList.add('ExpandP1')
         }
     }
 
@@ -139,16 +143,20 @@ function HeroHome() {
             <div className="">
                 <Header />
             </div>
-            <div  className="flex flex-col ">
+            <div className="sm:flex sm:justify-center sm:font-secondary hidden sm:text-[64px] sm:ml-[-2px]">Hello&#44; I&#39;m Sriganesh P</div>
+            <div  className="flex flex-col sm:flex-row-reverse sm:gap-12 sm:justify-center sm:mb-5 ">
                 <div className="flex relative justify-center">
-                    <div className="flex w-42.5 relative justify-center mt-5">
+                    <div className="flex w-42.5 sm:w-52 relative justify-center mt-5">
                         <div onClick={() => SetClickState(!ClickState)} tabIndex="0" className="turnabit">
                             {/* <div  className="absolute h-full w-full bg-transparent z-12" tabIndex="0"></div> */}
-                            <img ref={cardFlipRef} className={` h-42.5 w-42.5 rounded-full drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover object-top `} tabIndex="0" src={MyPhoto1} alt="" />
+                            <img ref={cardFlipRef} className={` h-42.5 w-42.5 sm:h-full sm:w-auto sm:relative rounded-full sm:rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover object-top sm:object-cover `} tabIndex="0" src={MyPhoto1} alt="" />
                             {/* <img ref={cardFlipRef} className={`rounded-xl drop-shadow-[0_0_24px_rgba(234,231,199,0.6)] outline-offset-2 object-cover`} tabIndex="0" src={MyPhoto1} alt="" /> */}
 
-                            <div ref={cardFlipBackRef} className={`absolute rounded-full top-0 left-0 h-full w-full bg-black`}></div>
+                            <div ref={cardFlipBackRef} className={`absolute rounded-full sm:rounded-xl top-0 left-0 h-full w-full bg-black`}></div>
                         </div>
+
+
+                        {/* //! */}
                         {/* <div className="">
                             <p className="rotate-[285deg] font-handwritten1 text-6xl pb-4 absolute top-10 left-[-11px] z-[-1]">Click</p>
                             <img className="absolute -rotate-2 top-[-4px] left-[13.7px] w-12.5 z-[-1]" src={Arrow1} alt="" />
@@ -157,22 +165,26 @@ function HeroHome() {
                             <p className="rotate-[105deg] font-handwritten1 text-6xl pb-4 absolute bottom-10 right-[-11px]  z-[-1]">Click</p>
                             <img className="absolute rotate-[182deg] bottom-[-4px] right-[13.7px] w-12.5 z-[-1]" src={Arrow1} alt="" />
                         </div> */}
+                        {/* //! */}
+
+
                     </div>
                 </div>
+                
                 <div className="mt-5 mb-3 h-auto flex flex-col justify-between">
                     <div className="flex flex-col justify-center">
-                        <div className="flex justify-center font-secondary text-[32px]">Hello&#44; I&#39;m Sriganesh P</div>
+                        <div className="flex justify-center font-secondary text-[32px] sm:hidden ">Hello&#44; I&#39;m Sriganesh P</div>
                         <div className="flex justify-center ml-[-46px]">
-                            <div className="font-tretiary font-extralight text-[30px]">Unity & <br className="" /> React Developer</div>
+                            <div className="font-tretiary font-extralight text-[30px] sm:text-[37px]">Unity & <br className="" /> React Developer</div>
                         </div>
                         <br />
-                        <div className="flex gap-2 justify-center text-left ml-[-39px] ">
+                        <div className="flex gap-2 justify-center text-left ml-[-39px] sm:ml-[-99px] ">
                             <div className="font-tretiary font-thin text-[16px]">Based in Tamil Nadu&#44; India </div>
                             <a className="" href="https://maps.app.goo.gl/DR8QozvhKgo4gNsp8" target="_blank" ><img className="-translate-y-[5px] h-6 tapping" src={Location} alt="" /></a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center mt-8">
-                        <div ref={ItemBorder} className="py-1 px-1.5 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3">
+                    <div className="flex flex-col justify-center items-center mt-8 sm:ml-[-40px] ">
+                        <div ref={ItemBorder} className="py-1 px-1.5 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3 sm:mb-0">
                             <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/" target="_blank" ><img ref={LinkedPos} className="SocialIcons w-13" src={LinkedInIcon} alt="" /></a>
                             <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons w-13  " src={GitHub} alt="" target="_blank" /></a>
                             <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons w-13" src={Mail} alt="" target="_blank" /></a>
