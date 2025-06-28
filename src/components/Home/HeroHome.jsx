@@ -144,7 +144,7 @@ function HeroHome() {
                 <Header />
             </div>
             <div className="sm:flex sm:justify-center sm:font-secondary hidden sm:text-[64px] sm:ml-[-2px] lg:hidden">Hello&#44; I&#39;m Sriganesh P</div>
-            <div  className="flex flex-col sm:flex-row-reverse sm:gap-12 sm:justify-center sm:mb-5 lg:flex-row lg:gap-30 ">
+            <div  className=" flex flex-col sm:flex-row-reverse sm:gap-12 sm:justify-center sm:mb-5 lg:flex-row lg:gap-30 lg:px-9 ">
                 <div className="flex relative justify-center">
                     <div className="flex w-42.5 sm:w-52 lg:w-85 relative justify-center mt-5">
                         <div onClick={() => SetClickState(!ClickState)} tabIndex="0" className="turnabit">
@@ -171,25 +171,25 @@ function HeroHome() {
                     </div>
                 </div>
                 
-                <div className="mt-5 mb-3 h-auto flex flex-col justify-between">
+                <div className="max-[20.5rem]:mx-5 mt-5 mb-3 h-auto flex flex-col justify-between">
                     <div className="flex flex-col justify-center">
-                        <div className="flex justify-center font-secondary text-[32px] sm:hidden lg:flex lg:text-[62px] ">Hello&#44; I&#39;m Sriganesh P</div>
-                        <div className="flex justify-center ml-[-46px]">
-                            <div className="font-tretiary font-extralight text-[30px] sm:text-[37px] lg:text-[42px] ">Unity & <br className="" /> React Developer</div>
+                        <div className="max-[20.5rem]:text-[28px] max-[20.5rem]:justify-normal flex justify-center font-secondary text-[32px] sm:hidden lg:flex lg:text-[49px] min-[72rem]:text-[62px] ">Hello&#44; I&#39;m Sriganesh P</div>
+                        <div className="max-[20.5rem]:ml-0 max-[20.5rem]:justify-normal flex justify-center ml-[-46px] lg:justify-normal lg:ml-0">
+                            <div className="max-[20.5rem]:text-[28px] max-[20.5rem]:justify-normal  font-tretiary font-extralight text-[30px] sm:text-[37px] lg:text-[38px] min-[72rem]:text-[42px] ">Unity & <br className="" /> React Developer</div>
                         </div>
                         <br />
-                        <div className="flex gap-2 justify-center text-left ml-[-39px] sm:ml-[-99px] ">
+                        <div className="max-[20.5rem]:ml-0 max-[20.5rem]:justify-normal flex gap-2 justify-center text-left ml-[-39px] sm:ml-[-99px] lg:justify-normal lg:ml-0 ">
                             <div className="font-tretiary font-thin text-[16px]">Based in Tamil Nadu&#44; India </div>
                             <a className="" href="https://maps.app.goo.gl/DR8QozvhKgo4gNsp8" target="_blank" ><img className="-translate-y-[5px] h-6 tapping" src={Location} alt="" /></a>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center mt-8 sm:ml-[-40px] lg:ml-0 ">
+                    <div className="flex flex-col justify-center items-center mt-8 sm:ml-[-40px] lg:justify-normal lg:items-start lg:ml-0">
                         <div ref={ItemBorder} className="py-1 px-1.5 flex flex-row justify-between align-middle gap-3 outline-3 rounded-full w-fit mb-3 sm:mb-0">
-                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/" target="_blank" ><img ref={LinkedPos} className="SocialIcons w-13 lg:min-w-15" src={LinkedInIcon} alt="" /></a>
-                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons w-13 lg:min-w-15 " src={GitHub} alt="" target="_blank" /></a>
-                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons w-13 lg:min-w-15" src={Mail} alt="" target="_blank" /></a>
-                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons w-13 lg:min-w-15" src={Instagram} alt="" target="_blank" /></a>
-                            <a href="/CV_SRIGANESH_P_v5.pdf" target="_blank" download ><img ref={ResumePos} className="SocialIcons w-13 lg:min-w-15" src={Resume} alt="" /></a>
+                            <a href="https://www.linkedin.com/in/sriganesh-prakash-725a50279/" target="_blank" ><img ref={LinkedPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={LinkedInIcon} alt="" /></a>
+                            <a href="https://github.com/SriGanesh01"><img ref={GitPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto " src={GitHub} alt="" target="_blank" /></a>
+                            <a href="https://mail.google.com/mail/?view=cm&to=psriganesh2005@gmail.com"><img ref={MailPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Mail} alt="" target="_blank" /></a>
+                            <a href="https://www.instagram.com/_sriganesh___/"><img ref={InstaPos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Instagram} alt="" target="_blank" /></a>
+                            <a href="/CV_SRIGANESH_P_v5.pdf" target="_blank" download ><img ref={ResumePos} className="SocialIcons w-13 lg:min-w-15 lg:w-auto" src={Resume} alt="" /></a>
                         </div>
                     </div>
                 </div>
