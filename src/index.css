@@ -18,6 +18,8 @@ body {
     height: 1000vh;
 }
 
+
+
 body::-webkit-scrollbar {
     display: none;
     scrollbar-width: 5px;
@@ -162,3 +164,7 @@ body::-webkit-scrollbar {
 .SocialIcons:hover {
     transform: scale3d(1.2, 1.2, 1);
 } */
+
+.liy {
+    height: 100vh;
+}
