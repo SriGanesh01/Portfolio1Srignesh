@@ -10,12 +10,14 @@
     --font-secondary: "Viga", sans-serif;
     --font-tretiary: "Victor Mono", monospace;
     --font-handwritten1: "Nanum Brush Script", cursive;
+
+    --color-primary: #EAE7C7;
 }
 
 body {
     background-color: #08090A;
     color: #EAE7C7;
-    height: 1000vh;
+    /* height: 1000vh; */
 }
 
 
@@ -167,4 +169,16 @@ body::-webkit-scrollbar {
 
 .liy {
     height: 100vh;
+}
+
+/** Animation Skills */
+
+.op {
+    transition: opacity 1s ease;
+    opacity: 100%;
+}
+
+.rop {
+    transition: opacity 1s ease;
+    opacity: 0%;
 }
